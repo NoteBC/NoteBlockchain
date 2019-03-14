@@ -1,1 +1,2 @@
-Note Blockchain Core
+Note Blockchain 
+www.notebc.com
