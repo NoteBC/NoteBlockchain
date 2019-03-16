@@ -14,6 +14,14 @@ for example, when specifying the path of the dependency:
 Here BDB_PREFIX must be an absolute path - it is defined using $(pwd) which ensures
 the usage of the absolute path.
 
+Permissions for some files are not correct in the repo, please change the following after cloning the repo
+
+```bash
+chmod +x autogen.sh
+cd share
+chmod +x genbuild.sh
+```
+
 To Build
 ---------------------
 
