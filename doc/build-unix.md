@@ -29,7 +29,7 @@ To Build
 ./autogen.sh
 ./configure
 make
-make install # optional
+make install # optional, if you use this, you can directly start notecoind from any location
 ```
 
 This will build notecoin-qt as well if the dependencies are met.
