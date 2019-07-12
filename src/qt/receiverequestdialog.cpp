@@ -152,14 +152,14 @@ void ReceiveRequestDialog::update()
 
 #ifdef USE_QRCODE
     ui->lblQRCode->setText("");
-    if(!uri.isEmpty())
+    if(!info.address.isEmpty())
     {
         // limit URI length
-        if (uri.length() > MAX_URI_LENGTH)
+        if (info.address.length() > MAX_URI_LENGTH)
         {
             ui->lblQRCode->setText(tr("Resulting URI too long, try to reduce the text for label / message."));
         } else {
-            QRcode *code = QRcode_encodeString(uri.toUtf8().constData(), 0, QR_ECLEVEL_L, QR_MODE_8, 1);
+            QRcode *code = QRcode_encodeString(info.address.toUtf8().constData(), 0, QR_ECLEVEL_L, QR_MODE_8, 1);
             if (!code)
             {
                 ui->lblQRCode->setText(tr("Error encoding URI into QR Code."));
