@@ -52,6 +52,7 @@
 #include <QTimer>
 #include <QToolBar>
 #include <QVBoxLayout>
+#include <QFontDatabase>
 
 #if QT_VERSION < 0x050000
 #include <QTextDocument>
@@ -166,6 +167,14 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *
          */
         setCentralWidget(rpcConsole);
     }
+
+    int id = QFontDatabase::addApplicationFont(":/fonts/gustavo");
+    QString family = QFontDatabase::applicationFontFamilies(id).at(0);
+    QFont gustavo(family);
+    int defaultFontSize = gustavo.pointSize();
+    defaultFontSize -= 2;
+    gustavo.setPointSize(defaultFontSize);
+    QApplication::setFont(gustavo);
 
     // Accept D&D of URIs
     setAcceptDrops(true);
