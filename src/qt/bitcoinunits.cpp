@@ -20,7 +20,7 @@ QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
     unitlist.append(BTC);
     unitlist.append(mBTC);
     unitlist.append(uBTC);
-	unitlist.append(mote);
+    unitlist.append(mote);
     return unitlist;
 }
 
@@ -31,7 +31,7 @@ bool BitcoinUnits::valid(int unit)
     case BTC:
     case mBTC:
     case uBTC:
-	case mote:
+    case mote:
         return true;
     default:
         return false;
@@ -45,7 +45,7 @@ QString BitcoinUnits::longName(int unit)
     case BTC: return QString("NOTES");
     case mBTC: return QString("mNOTES");
     case uBTC: return QString("uNOTES");
-	case mote: return QString("MOTE");
+    case mote: return QString("MOTE");
     default: return QString("???");
     }
 }
@@ -66,7 +66,7 @@ QString BitcoinUnits::description(int unit)
     case BTC: return QString("NoteCoins");
     case mBTC: return QString("mNTBC (1 / 1" THIN_SP_UTF8 "000)");
     case uBTC: return QString("uNTBC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-	case mote: return QString("uNTBC (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case mote: return QString("uNTBC (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }
@@ -78,7 +78,7 @@ qint64 BitcoinUnits::factor(int unit)
     case BTC:  return 100000000;
     case mBTC: return 100000;
     case uBTC: return 100;
-	case mote: return 1;
+    case mote: return 1;
     default:   return 100000000;
     }
 }
@@ -90,7 +90,7 @@ int BitcoinUnits::decimals(int unit)
     case BTC: return 8;
     case mBTC: return 5;
     case uBTC: return 2;
-	case mote: return 0;
+    case mote: return 0;
     default: return 0;
     }
 }
