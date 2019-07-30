@@ -168,13 +168,18 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *
         setCentralWidget(rpcConsole);
     }
 
-    int id = QFontDatabase::addApplicationFont(":/fonts/gustavo");
-    QString family = QFontDatabase::applicationFontFamilies(id).at(0);
-    QFont gustavo(family);
-    int defaultFontSize = gustavo.pointSize();
-    defaultFontSize -= 2;
-    gustavo.setPointSize(defaultFontSize);
-    QApplication::setFont(gustavo);
+    // NoteBC: load fallback font in case Comic Sans is not availble on the system
+    QFontDatabase::addApplicationFont(":fonts/Signika-Regular");
+    QFontDatabase::addApplicationFont(":fonts/Signika-Semibold");
+    QFontDatabase::addApplicationFont(":fonts/Signika-Light");
+    QFontDatabase::addApplicationFont(":fonts/Signika-Bold");
+    QFont::insertSubstitution("Signika", "Signika Regular");
+
+    // NoteBC: Specify Signika as default font.
+    QFont newFont("Signika", 16);
+
+    // Dogecoin: Set new application font
+    QApplication::setFont(newFont);
 
     // Accept D&D of URIs
     setAcceptDrops(true);

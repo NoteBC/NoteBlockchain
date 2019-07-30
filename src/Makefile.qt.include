@@ -324,12 +324,10 @@ RES_ICONS = \
   qt/res/icons/verify.png
 
 RES_FONTS = \
-  qt/res/fonts/gustavo_bold.ttf \
-  qt/res/fonts/gustavo_bold_italic.ttf \
-  qt/res/fonts/gustavo_italic.ttf \
-  qt/res/fonts/gustavo_regular.ttf \
-  qt/res/fonts/gustavo_thin.ttf \
-  qt/res/fonts/gustavo.ttf
+  qt/res/fonts/Signika-Regular.ttf \
+  qt/res/fonts/Signika-Light.ttf \
+  qt/res/fonts/Signika-Bold.ttf \
+  qt/res/fonts/Signika-Semibold.ttf
 
 BITCOIN_QT_BASE_CPP = \
   qt/bantablemodel.cpp \
