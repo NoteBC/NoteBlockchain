@@ -176,7 +176,7 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *
     QFont::insertSubstitution("Signika", "Signika Regular");
 
     // NoteBC: Specify Signika as default font.
-    QFont newFont("Signika", 16);
+    QFont newFont("Signika", 10);
 
     // Dogecoin: Set new application font
     QApplication::setFont(newFont);
