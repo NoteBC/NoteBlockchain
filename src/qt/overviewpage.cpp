@@ -18,7 +18,8 @@
 #include <QAbstractItemDelegate>
 #include <QPainter>
 
-#define DECORATION_SIZE 32
+#define DECORATION_SIZE 54
+#define OV_ICON_SIZE 32
 #define NUM_ITEMS 5
 
 class TxViewDelegate : public QAbstractItemDelegate
@@ -131,7 +132,7 @@ OverviewPage::OverviewPage(const PlatformStyle *platformStyle, QWidget *parent) 
 
     // Recent transactions
     ui->listTransactions->setItemDelegate(txdelegate);
-    ui->listTransactions->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
+    ui->listTransactions->setIconSize(QSize(OV_ICON_SIZE, OV_ICON_SIZE));
     ui->listTransactions->setMinimumHeight(NUM_ITEMS * (DECORATION_SIZE + 2));
     ui->listTransactions->setAttribute(Qt::WA_MacShowFocusRect, false);
 

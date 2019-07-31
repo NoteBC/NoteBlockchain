@@ -94,9 +94,9 @@
         <file alias="spinner-035">res/movies/spinner-035.png</file>
     </qresource>
     <qresource prefix="/fonts" >
-        <file alias="Signika-Regular">res/fonts/Signika-Regular.ttf</file>
-        <file alias="Signika-Light">res/fonts/Signika-Light.ttf</file>
-        <file alias="Signika-Bold">res/fonts/Signika-Bold.ttf</file>
-        <file alias="Signika-Semibold">res/fonts/Signika-Semibold.ttf</file>
+        <file alias="Akrobat-Regular">res/fonts/Akrobat-Regular.ttf</file>
+        <file alias="Akrobat-Light">res/fonts/Akrobat-Light.ttf</file>
+        <file alias="Akrobat-Bold">res/fonts/Akrobat-Bold.ttf</file>
+        <file alias="Akrobat-Semibold">res/fonts/Akrobat-Semibold.ttf</file>
     </qresource>
 </RCC>

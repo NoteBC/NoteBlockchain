@@ -169,14 +169,14 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *
     }
 
     // NoteBC: load fallback font in case Comic Sans is not availble on the system
-    QFontDatabase::addApplicationFont(":fonts/Signika-Regular");
-    QFontDatabase::addApplicationFont(":fonts/Signika-Semibold");
-    QFontDatabase::addApplicationFont(":fonts/Signika-Light");
-    QFontDatabase::addApplicationFont(":fonts/Signika-Bold");
-    QFont::insertSubstitution("Signika", "Signika Regular");
+    QFontDatabase::addApplicationFont(":fonts/Akrobat-Regular");
+    QFontDatabase::addApplicationFont(":fonts/Akrobat-Semibold");
+    QFontDatabase::addApplicationFont(":fonts/Akrobat-Light");
+    QFontDatabase::addApplicationFont(":fonts/Akrobat-Bold");
+    QFont::insertSubstitution("Akrobat Regular", "Akrobat");
 
-    // NoteBC: Specify Signika as default font.
-    QFont newFont("Signika", 10);
+    // NoteBC: Specify Akrobat as default font.
+    QFont newFont("Akrobat", 10);
 
     // Dogecoin: Set new application font
     QApplication::setFont(newFont);
