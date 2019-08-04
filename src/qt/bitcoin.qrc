@@ -97,6 +97,6 @@
         <file alias="Akrobat-Regular">res/fonts/Akrobat-Regular.ttf</file>
         <file alias="Akrobat-Light">res/fonts/Akrobat-Light.ttf</file>
         <file alias="Akrobat-Bold">res/fonts/Akrobat-Bold.ttf</file>
-        <file alias="Akrobat-Semibold">res/fonts/Akrobat-Semibold.ttf</file>
+        <file alias="Akrobat-Semibold">res/fonts/Akrobat-SemiBold.ttf</file>
     </qresource>
 </RCC>
