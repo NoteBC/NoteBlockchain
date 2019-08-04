@@ -176,7 +176,7 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *
     QFont::insertSubstitution("Akrobat Regular", "Akrobat");
 
     // NoteBC: Specify Akrobat as default font.
-    QFont newFont("Akrobat", 10);
+    QFont newFont("Akrobat", 11);
 
     // Dogecoin: Set new application font
     QApplication::setFont(newFont);
