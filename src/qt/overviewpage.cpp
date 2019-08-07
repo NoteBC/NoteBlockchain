@@ -43,7 +43,7 @@ public:
         int xspace = DECORATION_SIZE + 8;
         int ypad = 6;
         int halfheight = (mainRect.height() - 2*ypad)/2;        
-        QRect decorationRect(mainRect.left(), mainRect.top() + 2*ypad, OV_ICON_SIZE, OV_ICON_SIZE);
+        QRect decorationRect(mainRect.left(), mainRect.top()+ypad, OV_ICON_SIZE, OV_ICON_SIZE);
         QRect amountRect(mainRect.left() + xspace, mainRect.top()+ypad, mainRect.width() - xspace, halfheight);
         QRect addressRect(mainRect.left() + xspace, mainRect.top()+ypad+halfheight, mainRect.width() - xspace, halfheight);
         icon = platformStyle->SingleColorIcon(icon);
