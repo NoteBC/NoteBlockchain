@@ -42,9 +42,9 @@ QString BitcoinUnits::longName(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("NOTES");
-    case mBTC: return QString("mNOTES");
-    case uBTC: return QString("uNOTES");
+    case BTC: return QString("NTBC");
+    case mBTC: return QString("mNTBC");
+    case uBTC: return QString("uNTBC");
     case mote: return QString("MOTE");
     default: return QString("???");
     }
@@ -63,7 +63,7 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("NoteCoins");
+    case BTC: return QString("NTBC");
     case mBTC: return QString("mNTBC (1 / 1" THIN_SP_UTF8 "000)");
     case uBTC: return QString("uNTBC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     case mote: return QString("uNTBC (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
