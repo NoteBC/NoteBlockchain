@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "qradialgradient": "cpp"
-    },
-    "window.title": "${activeEditorLong}${separator}${rootName}",
-    "window.showFullPath": true
-}
